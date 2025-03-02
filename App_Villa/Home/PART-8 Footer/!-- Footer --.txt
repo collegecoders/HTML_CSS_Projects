@@ -1,0 +1,151 @@
+ <!-- Footer -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="top-left">
+          <img class="top-1" src="/assets/Home/white-logo.svg" alt="" />
+          <span class="top-2"
+            >Making the world a better place through constructing elegant
+            hierarchies.
+          </span>
+          <span class="top-3"> Designed and Developed by UIdeck</span>
+        </div>
+        <div class="top-right">
+          <ul class="right-ul">
+            <li>Solutions</li>
+            <li>Marketing</li>
+            <li>Analytics</li>
+            <li>Commerce</li>
+            <li>Insights</li>
+            <li>Promotion</li>
+          </ul>
+          <ul class="right-ul">
+            <li>Solutions</li>
+            <li>Marketing</li>
+            <li>Analytics</li>
+            <li>Commerce</li>
+            <li>Insights</li>
+            <li>Promotion</li>
+          </ul>
+          <ul class="right-ul">
+            <li>Solutions</li>
+            <li>Marketing</li>
+            <li>Analytics</li>
+            <li>Commerce</li>
+            <li>Insights</li>
+            <li>Promotion</li>
+          </ul>
+          <ul class="right-ul">
+            <li>Solutions</li>
+            <li>Marketing</li>
+            <li>Analytics</li>
+            <li>Commerce</li>
+            <li>Insights</li>
+            <li>Promotion</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="bottom-left">
+          <span>Subscribe to our newsletter</span
+          ><span
+            >The latest news, articles, and resources, sent to your inbox
+            weekly.
+          </span>
+        </div>
+        <div class="bottom-right">
+          <input type="text" placeholder="Your email address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+
+FOOTER CSS:-
+============
+
+.footer {
+  background-color: rgb(24, 23, 45);
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer-top {
+  padding-left: 140px;
+  display: flex;
+  width: 80%;
+  gap: 40px;
+}
+.top-left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.top-1 {
+  width: 180px;
+  margin-bottom: 15px;
+}
+.top-2 {
+  margin-bottom: 70px;
+}
+.top-right {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.right-ul {
+  list-style: none;
+}
+.right-ul > :nth-child(1) {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.right-ul li {
+  line-height: 28px;
+}
+.footer-bottom {
+  margin-top: 100px;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(85, 73, 73);
+  padding: 40px;
+  margin-left: 140px;
+  align-items: center;
+}
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bottom-left > :nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+}
+.bottom-right {
+  display: flex;
+  gap: 20px;
+}
+.bottom-right > :nth-child(1) {
+  outline: none;
+  border: none;
+  display: flex;
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff33;
+}
+.bottom-right > :nth-child(2) {
+  margin-right: 50px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #ff6b81;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
