@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark & Light Mode</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      /* Dark Mode */
+      .dark {
+        background-color: black;
+        color: white;
+      }
+
+      /* Toggle Button */
+      .dark-img {
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      /* Header Section */
+      .header {
+        text-align: center;
+        padding: 50px 20px;
+        background: linear-gradient(135deg, #007bff, #00d4ff);
+        color: white;
+        border-radius: 0 0 50px 50px;
+      }
+
+      /* Content Section */
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+      .dark .card {
+        background-color: #222;
+      }
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background: #007bff;
+        color: white;
+        margin-top: 20px;
+        border-radius: 50px 50px 0 0;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/dark.png" onclick="darkTheme()" class="dark-img" alt="" />
+    <div class="header">
+      <h1>Welcome to My Stylish Website</h1>
+      <p>Experience the magic of dark and light mode</p>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2>Simple and Clean</h2>
+        <p>This website is designed with a modern and minimalistic approach.</p>
+      </div>
+
+      <div class="card">
+        <h2>Dark Mode Enabled</h2>
+        <p>
+          Switch between light and dark mode effortlessly with a smooth
+          transition.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Responsive Design</h2>
+        <p>
+          Looks great on any device, whether you're using a phone, tablet, or
+          computer.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>College Coders</p>
+    </div>
+    <script>
+      function darkTheme() {
+        document.body.classList.toggle("dark");
+
+        let mode = document.querySelector(".dark-img");
+        if (document.body.classList.contains("dark")) {
+          mode.src = "/light.png";
+        } else {
+          mode.src = "/dark.png";
+        }
+      }
+    </script>
+  </body>
+</html>
