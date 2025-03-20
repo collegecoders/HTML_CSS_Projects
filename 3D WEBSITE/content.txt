@@ -1,0 +1,62 @@
+
+
+AI: The art of making machines think.
+
+AI enables machines to think and learn like humans. It powers automation, smart decisions, and innovation.
+
+border-image: linear-gradient(45deg, red, blue, green, yellow) 1;
+
+.btn {
+  position: relative;
+  padding: 5px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* The animated border effect */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, red, blue, green, yellow, red);
+  z-index: -1;
+  border-radius: 12px;
+  filter: blur(4px);
+  animation: borderAnimation 3s linear infinite;
+}
+
+/* Inner button to maintain solid background */
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: black;
+  z-index: -1;
+  border-radius: 6px;
+}
+@keyframes borderAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+<iframe src='https://my.spline.design/robotfollowcursorforlandingpage-d1ea9483cc80a9d8af5e2d75351cb02f/' frameborder='0' width='100%' height='100%'></iframe>
