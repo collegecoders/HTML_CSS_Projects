@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+      .profile {
+        position: relative;
+      }
+      img {
+        width: 330px;
+        border-radius: 28% 72% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      .shape1 {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 28% 72% 70% 30% / 30% 30% 70% 70%;
+        background-color: orange;
+        z-index: -1;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+          rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+          rgba(240, 46, 170, 0.1) -20px 20px,
+          rgba(240, 46, 170, 0.05) -25px 25px;
+      }
+      .shape2 {
+        z-index: -1;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        width: 300px;
+        height: 300px;
+        border-radius: 28% 72% 70% 30% / 30% 30% 70% 70%;
+        background-color: skyblue;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+          rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+          rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <img src="/image.jpg" alt="" />
+      <div class="shape1"></div>
+      <div class="shape2"></div>
+      <div class="shape3"></div>
+    </div>
+  </body>
+</html>
